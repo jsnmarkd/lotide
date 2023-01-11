@@ -1,4 +1,4 @@
-const eqArrays = function (a, b) {
+const eqArrays = function(a, b) {
   if (a.length !== b.length) {
     return false;
   } else {
@@ -11,7 +11,7 @@ const eqArrays = function (a, b) {
   }
 };
 
-const assertArraysEqual = function (actual, expected) {
+const assertArraysEqual = function(actual, expected) {
   if (eqArrays(actual, expected)) {
     console.log(`⭕ Assertion Passed: ${actual} === ${expected}`);
   } else {
@@ -26,7 +26,7 @@ const middle = function(array) {
     if (array.length === 1 || array.length === 2) {
       return middleArr;
     } else if (array.length % 2 === 1) {
-      middleArr.push(array[Math.floor(array.length/2)]);
+      middleArr.push(array[Math.floor(array.length / 2)]);
       return middleArr;
     } else if (array.length % 2 === 0) {
       middleArr.push(array[Math.floor(array.length / 2) - 1], array[Math.floor(array.length / 2)]);
@@ -36,15 +36,15 @@ const middle = function(array) {
 };
 
 // TEST
-console.log(middle([1])) // => []
-console.log(middle([1, 2])) // => []
+console.log(middle([1])); // => []
+console.log(middle([1, 2])); // => []
 
-console.log(middle([1, 2, 3])) // => [2]
-console.log(middle([1, 2, 3, 4, 5])) // => [3]
-console.log(middle([1, 2, 3, 4, 5, 6, 7])) // => [4]
-console.log(middle([1, 2, 3, 4, 5, 6, 7, 8, 9])) // => [5]
+console.log(middle([1, 2, 3])); // => [2]
+console.log(middle([1, 2, 3, 4, 5])); // => [3]
+console.log(middle([1, 2, 3, 4, 5, 6, 7])); // => [4]
+console.log(middle([1, 2, 3, 4, 5, 6, 7, 8, 9])); // => [5]
 
-console.log(middle([1, 2, 3, 4])) // => [2, 3]
-console.log(middle([1, 2, 3, 4, 5, 6])) // => [3, 4]
+console.log(middle([1, 2, 3, 4])); // => [2, 3]
+console.log(middle([1, 2, 3, 4, 5, 6])); // => [3, 4]
 console.log(middle([1, 2, 3, 4, 5, 6, 7, 8])); // => [4, 5]
 console.log(middle([1, 2, 3, 4, 5, 6, 7, 8, 9, 10])); // => [5, 6]
