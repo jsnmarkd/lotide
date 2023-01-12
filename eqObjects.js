@@ -1,4 +1,4 @@
-const eqArrays = function (a, b) {
+const eqArrays = function(a, b) {
   if (a.length !== b.length) {
     return false;
   } else {
@@ -21,19 +21,19 @@ const assertEqual = function(actual, expected) {
 
 // Returns true if both objects have identical keys with identical values.
 // Otherwise you get back a big fat false!
-const eqObjects = function (object1, object2) {
+const eqObjects = function(object1, object2) {
   let keys1 = Object.keys(object1);
   let keys2 = Object.keys(object2);
-  if(keys1.length === keys2.length) {
-    for(let key of keys1) {
+  if (keys1.length === keys2.length) {
+    for (let key of keys1) {
       if (object1[key].isArray && object2[key].isArray) {
         eqArrays(object1[key], object2[key]);
       } else if (object1[key] === object2[key]) {
         return true;
-      } 
+      }
     }
   }
-  return false
+  return false;
 };
 
 
@@ -41,7 +41,7 @@ const eqObjects = function (object1, object2) {
 const shirtObject = { color: "red", size: "medium" };
 const anotherShirtObject = { size: "medium", color: "red" };
 eqObjects(shirtObject, anotherShirtObject); // => true
-assertEqual(eqObjects(shirtObject, anotherShirtObject), true)
+assertEqual(eqObjects(shirtObject, anotherShirtObject), true);
 
 const longSleeveShirtObject = { size: "medium", color: "red", sleeveLength: "long" };
 eqObjects(shirtObject, longSleeveShirtObject); // => false
