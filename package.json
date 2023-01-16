@@ -1,7 +1,7 @@
 {
-  "name": "lotide",
+  "name": "@jsnmarkd/lotide",
   "version": "1.0.0",
-  "description": "",
+  "description": "Lotide Project for LHL",
   "main": "assertArraysEqual.js",
   "directories": {
     "test": "test"
@@ -13,7 +13,7 @@
     "type": "git",
     "url": "git+https://github.com/jsnmarkd/lotide.git"
   },
-  "author": "",
+  "author": "Jason Divinagracia",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/jsnmarkd/lotide/issues"
