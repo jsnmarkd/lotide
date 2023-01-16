@@ -34,5 +34,7 @@ const assertArraysEqual = function(actual, expected) {
   }
 };
 
+module.exports = letterPositions;
+
 console.log(letterPositions("hello"));
 console.log(assertArraysEqual(letterPositions("hello").e, [1]));

@@ -14,6 +14,8 @@ const findKey = (object, callback) => {
   }
 };
 
+module.exports = findKey;
+
 const nestedObj = {
   "Blue Hill": { stars: 1 },
   "Akaleri": { stars: 3 },

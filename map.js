@@ -33,6 +33,7 @@ const words = ["ground", "control", "to", "major", "tom"];
 const words1 = ["light", "house", "labs"];
 const results1 = map(words, callbackFunc);
 
+module.exports = map;
 
 //TEST
 console.log(results1);
