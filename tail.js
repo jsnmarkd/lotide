@@ -1,8 +1,8 @@
 const tail = function(data) {
-  if (data[1] === undefined || data === []) {
-    console.log([]);
+  if (data.length === 0) {
+    return [];
   } else {
-    console.log(data.slice(1));
+    return data.slice(1);
   }
 };
 
